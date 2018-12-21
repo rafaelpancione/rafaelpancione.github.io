@@ -70,10 +70,11 @@ img{
      background-size: cover;
      height: 325px; 
      display: flex;
+     margin: 32px 0;
 }
 
 .img-sobre h2{
-    width: 468px;
+    width: 368px;
     text-align: center;
     color: #fff;
     display: flex;
@@ -83,8 +84,48 @@ img{
 
 .conteudo-sobre h3{
     text-align: right;
+    font-weight: 600;
 }
 
+.competencias{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+}
+
+.skills{
+    width: 300px;
+}
+.w3-black{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height:14px;
+    background: #fff;
+}
+
+.html{
+    width: 50%;
+}
+
+.css{
+    width: 45%;
+}
+
+.ora{
+    width: 70%;
+}
+
+.scrum{
+    width: 50%;
+}
+
+.xd{
+    width: 70%;
+}
+
+.ps{
+    width:80%;
+}
 
 /* -- Menu -- */
 
@@ -94,12 +135,12 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 64px;
     padding-bottom: 32px;
 }
 
-.menu-bg{
-   height: 1080px;    
+.menu-bg{  
    width: 512px;
    background: #000;
    text-align: center;
