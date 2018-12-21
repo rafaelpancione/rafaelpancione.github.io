@@ -10,7 +10,6 @@ body, h1, h2, p, ul, li, a {
 
 body{
     font-family: 'Poppins', sans-serif;
-    color: #FFF;
 }
 
 ul{
@@ -26,7 +25,7 @@ img{
     max-width: 100%;
 }
 
-/* -- Principal  -- */
+/* -- Principal - home -- */
 
 .principal{
     width: 100%;
@@ -45,8 +44,46 @@ img{
 .conteudo-home h1{
   font-size: 48px;
   font-weight: 600;
+  color: #fff;
 }
 
+/* -- Principal - sobre -- */
+
+.principal-sobre{
+    width: 100%;
+    display: flex;
+}
+
+.conteudo-sobre{
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+    padding: 64px;
+}
+
+.conteudo-sobre h1{
+  color: #000;
+}
+
+.img-sobre{
+     background: url("../img/bg.png") center no-repeat;
+     background-size: cover;
+     height: 325px; 
+     display: flex;
+}
+
+.img-sobre h2{
+    width: 468px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-sobre h3{
+    text-align: right;
+}
 
 
 /* -- Menu -- */
@@ -64,9 +101,12 @@ img{
 .menu-bg{
    height: 1080px;    
    width: 512px;
-   opacity: 0.8;
    background: #000;
    text-align: center;
+}
+
+.opacidade{
+    opacity: 0.8;
 }
 
 .logo {
@@ -75,7 +115,7 @@ img{
     display: inline;   
 }
 
-a, p {
+.menu a, .menu p {
     color: #fff;
     font-size: 24px;
     font-weight: 300;
