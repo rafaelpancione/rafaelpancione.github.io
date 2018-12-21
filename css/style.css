@@ -96,11 +96,11 @@ img{
 .skills{
     width: 300px;
 }
-.w3-black{
+.barra{
     margin-top: 8px;
     margin-bottom: 8px;
     height:14px;
-    background: #fff;
+    background: #000;
 }
 
 .html{
