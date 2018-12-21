@@ -26,7 +26,7 @@ img{
     max-width: 100%;
 }
 
-/* -- Principal -- */
+/* -- Principal 
 
 .principal{
     width: 100%;
@@ -36,7 +36,7 @@ img{
 }
 
 .conteudo-home{
-    text-align: left;
+    text-align: center;
 }
 
 .conteudo-home h1{
@@ -44,6 +44,70 @@ img{
   font-size: 48px;
   font-weight: 600;
   padding-top: 506px;
-  padding-left: 992px;
 }
+
+-- */
+
+/* -- Menu -- */
+
+.menu{
+    height: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 32px;
+}
+
+.menu-bg{
+   height: 1080px;    
+   width: 512px;
+   background: #000;
+   text-align: center;
+}
+
+.logo {
+    width: 166px;
+    height: auto;
+    display: inline;   
+}
+
+a, p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.46;
+}
+
+.redes-sociais{
+    padding: 0 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+}
+
+.detalhe{
+    width: 200px;
+    border-bottom: 1px solid white;
+}
+
+.menu-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item{
+    padding: 16px;
+}
+
+
+
+
+
+
+
+
+
 
