@@ -173,7 +173,7 @@ progress[value]::-webkit-progress-value{
 }
 
 .projeto{
-    margin: 0 auto;
+    margin: 20px 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -196,11 +196,11 @@ progress[value]::-webkit-progress-value{
 }
 
 .descricao-projeto a{
-    text-align: right;
+    text-align: left;
 }
 
 .img-projeto{
-    flex: 1 1 800px;
+    flex: 1 1 200px;
 }
 
 
