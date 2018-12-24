@@ -66,6 +66,9 @@ img{
     text-align: center;
 }
 
+.redes-sociais{
+    display: flex;
+}
 
 .redes-sociais a{
     padding: 0px 16px;
@@ -82,7 +85,7 @@ img{
 }
 
 
-/* -- Principal - home -- */
+/* -- Principal - HOME -- */
 
 .background{
     display: flex;
@@ -103,7 +106,7 @@ img{
   color: #fff;
 }
 
-/* -- Principal - sobre -- */
+/* -- Principal - SOBRE -- */
 
 .conteudo-sobre{
     display: block;
@@ -111,10 +114,15 @@ img{
     padding: 64px 64px 32px;
 }
 
+.conteudo-sobre p{
+    font-size: 18px;
+}
+
 .banner{
     display: flex;
     background: url("../img/bg.png") center no-repeat;
     background-size: cover;
+    flex-wrap: wrap;
     height: 325px;
     margin: 32px 0;
 }
@@ -123,6 +131,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
     color: #fff;
     width: 468px;
@@ -136,6 +145,7 @@ img{
 .competencias{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-bottom: 20px;
 }
 
@@ -155,6 +165,8 @@ progress[value]::-webkit-progress-bar {
 progress[value]::-webkit-progress-value{
     background-color: #000;
 }
+
+/* -- Principal - PORTIFOLIO -- */
 
 
 
