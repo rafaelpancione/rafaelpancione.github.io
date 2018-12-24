@@ -35,14 +35,13 @@ img{
 /* -- MENU VERTICAL -- */
 
 .container{
-    height: 100%;
-    display: flex;
-    
+    min-height: 100%;
+    display: flex;  
 }
 
 .menu{
     background: #000;
-    padding: 64px 64px;
+    padding: 64px 64px 32px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -109,7 +108,7 @@ img{
 .conteudo-sobre{
     display: block;
     flex: 1;
-    padding: 64px;
+    padding: 64px 64px 32px;
 }
 
 .banner{
@@ -155,10 +154,6 @@ progress[value]::-webkit-progress-bar {
 
 progress[value]::-webkit-progress-value{
     background-color: #000;
-}
-
-.ultimop{
-    padding-bottom: 64px;
 }
 
 
