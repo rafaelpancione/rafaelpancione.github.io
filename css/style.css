@@ -42,14 +42,12 @@ img{
 
 .menu{
     background: #000;
-    width: 512px;
+    padding: 64px 64px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 64px;
-    padding-bottom: 32px;
 }
 
 .opacidade{
@@ -61,13 +59,14 @@ img{
     height: auto; 
 }
 
-.menu a, .menu p {
+.menu a, .menu p{
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
-    line-height: 1.46;
+    line-height: 1.8;
     text-align: center;
 }
+
 
 .redes-sociais a{
     padding: 0px 16px;
@@ -108,10 +107,70 @@ img{
 /* -- Principal - sobre -- */
 
 .conteudo-sobre{
-    display: inline;
+    display: block;
     flex: 1;
     padding: 64px;
 }
+
+.banner{
+    display: flex;
+    background: url("../img/bg.png") center no-repeat;
+    background-size: cover;
+    height: 325px;
+    margin: 32px 0;
+}
+
+.banner h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: 468px;
+    padding-left: 46px;
+}
+
+.conteudo-sobre h3{
+    text-align: right;
+}
+
+.competencias{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 250px;
+  height: 15px;
+  margin-bottom: 10px;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+progress[value]::-webkit-progress-value{
+    background-color: #000;
+}
+
+.ultimop{
+    padding-bottom: 64px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
