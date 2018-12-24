@@ -105,12 +105,13 @@ img{
   color: #fff;
 }
 
-
-
 /* -- Principal - sobre -- */
 
-
-
+.conteudo-sobre{
+    display: inline;
+    flex: 1;
+    padding: 64px;
+}
 
 
 
