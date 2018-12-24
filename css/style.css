@@ -3,12 +3,19 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 body, h1, h2, p, ul, li, a {
     margin: 0px;
     padding: 0px;
 }
 
 body{
+    height: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -25,125 +32,24 @@ img{
     max-width: 100%;
 }
 
-/* -- Principal - home -- */
+/* -- MENU VERTICAL -- */
 
-.principal{
-    width: 100%;
+.container{
+    height: 100%;
     display: flex;
-    background: url("../img/bg-home.png") center no-repeat;
-	background-size: cover;
+    
 }
-
-.conteudo-home{
-    display: flex;
-    width: 100%;    
-    justify-content: center;
-    align-items: center;
-}
-
-.conteudo-home h1{
-  font-size: 48px;
-  font-weight: 600;
-  color: #fff;
-}
-
-/* -- Principal - sobre -- */
-
-.principal-sobre{
-    width: 100%;
-    display: flex;
-}
-
-.conteudo-sobre{
-    display: flex;
-    flex-direction: column;
-    width: 100%;    
-    padding: 64px;
-}
-
-.conteudo-sobre h1{
-  color: #000;
-}
-
-.img-sobre{
-     background: url("../img/bg.png") center no-repeat;
-     background-size: cover;
-     height: 325px; 
-     display: flex;
-     margin: 32px 0;
-}
-
-.img-sobre h2{
-    width: 368px;
-    text-align: center;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.conteudo-sobre h3{
-    text-align: right;
-    font-weight: 600;
-}
-
-.competencias{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 24px;
-}
-
-.skills{
-    width: 300px;
-}
-.barra{
-    margin-top: 8px;
-    margin-bottom: 8px;
-    height:14px;
-    background: #000;
-}
-
-.html{
-    width: 50%;
-}
-
-.css{
-    width: 45%;
-}
-
-.ora{
-    width: 70%;
-}
-
-.scrum{
-    width: 50%;
-}
-
-.xd{
-    width: 70%;
-}
-
-.ps{
-    width:80%;
-}
-
-/* -- Menu -- */
 
 .menu{
-    height: 1080px;
-    margin: 0 auto;
+    background: #000;
+    width: 512px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
     padding-top: 64px;
     padding-bottom: 32px;
-}
-
-.menu-bg{  
-   width: 512px;
-   background: #000;
-   text-align: center;
 }
 
 .opacidade{
@@ -152,8 +58,7 @@ img{
 
 .logo {
     width: 166px;
-    height: auto;
-    display: inline;   
+    height: auto; 
 }
 
 .menu a, .menu p {
@@ -161,29 +66,51 @@ img{
     font-size: 24px;
     font-weight: 300;
     line-height: 1.46;
+    text-align: center;
 }
 
-.redes-sociais{
-    padding: 0 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;    
+.redes-sociais a{
+    padding: 0px 16px;
 }
 
 .detalhe{
     border-bottom: 1px solid white;
 }
 
-.menu-nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .item{
     width: 200px;
     padding: 16px;
+    text-align: center;
 }
+
+
+/* -- Principal - home -- */
+
+.background{
+    display: flex;
+    background: url("../img/bg-home.png") center no-repeat;
+	background-size: cover;
+}
+
+.conteudo-home{
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.conteudo-home h1{
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+}
+
+
+
+/* -- Principal - sobre -- */
+
+
+
 
 
 
