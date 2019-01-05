@@ -41,12 +41,21 @@ img{
 
 .menu{
     background: #000;
-    padding: 64px 64px 32px;
+    padding: 64px 64PX 32px 64px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+       
+}
+
+.menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 .opacidade{
@@ -64,6 +73,9 @@ img{
     font-weight: 300;
     line-height: 1.8;
     text-align: center;
+    
+    display: block;
+    transition: 0.3s;
 }
 
 .redes-sociais{
@@ -84,6 +96,24 @@ img{
     text-align: center;
 }
 
+.hamburger-icon {
+    margin: 0;
+    padding: 19px 16px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hamburger-icon span {
+    width: 40px;
+    background-color: #fff;
+    height: 3px;
+    display: block;
+    margin-bottom: 6px;
+}
+.hamburger-icon span:last-child {
+    margin-bottom:0px;
+}
 
 /* -- Principal - HOME -- */
 
@@ -203,7 +233,27 @@ progress[value]::-webkit-progress-value{
     flex: 1 1 200px;
 }
 
+/* -- RESPONSIVO -- */
+@media only screen and (min-width: 768px) and (max-width: 959px){
+    .menu{
+    padding: 64px 0 32px 0;    
+    position: fixed;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+    
+    .hamburger-icon {
 
+    display: inline-block;
+   
+}
+    
+}
 
 
 
