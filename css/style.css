@@ -50,7 +50,7 @@ img{
        
 }
 
-.menu .closebtn {
+.menu .closebtn{
   position: absolute;
   top: 0;
   right: 25px;
@@ -96,23 +96,14 @@ img{
     text-align: center;
 }
 
-.hamburger-icon {
-    margin: 0;
-    padding: 19px 16px;
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
+.openbtn{
+   width: 0;
+   margin: 16px;
 }
-.hamburger-icon span {
-    width: 40px;
-    background-color: #fff;
-    height: 3px;
-    display: block;
-    margin-bottom: 6px;
-}
-.hamburger-icon span:last-child {
-    margin-bottom:0px;
+
+.openbtn a{
+    color: #fff;
+    font-size: 32px;
 }
 
 /* -- Principal - HOME -- */
