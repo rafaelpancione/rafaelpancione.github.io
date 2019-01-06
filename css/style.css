@@ -51,6 +51,7 @@ img{
 }
 
 .menu .closebtn{
+  display: none;
   position: absolute;
   top: 0;
   right: 25px;
@@ -97,12 +98,13 @@ img{
 }
 
 .openbtn{
+   display: none;    
    width: 0;
    margin: 16px;
 }
 
 .openbtn a{
-    color: #fff;
+    color: #000;
     font-size: 32px;
 }
 
@@ -194,7 +196,7 @@ progress[value]::-webkit-progress-value{
 }
 
 .projeto{
-    margin: 20px 0;
+    margin: 32px 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -237,13 +239,24 @@ progress[value]::-webkit-progress-value{
     overflow-x: hidden;
     transition: 0.5s;
 }
+    .openbtn{
+   display:inline-block; 
+    }
     
-    .hamburger-icon {
+    .openbtnhome{
+   display: inline-block;    
+   width: 0;
+   margin: 16px;
+}
 
-    display: inline-block;
-   
+    .openbtnhome a{
+    color: #fff;
+    font-size: 32px;
 }
     
+    .menu .closebtn{
+  display: inline-block;
+    }
 }
 
 
