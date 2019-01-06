@@ -165,9 +165,9 @@ img{
     padding-left: 46px;
 }
 
-.conteudo-sobre h3{
-    text-align: right;
-}
+   .conteudo-sobre h3{
+    text-align: center;
+    }
 
 .competencias{
     display: flex;
@@ -175,6 +175,10 @@ img{
     flex-wrap: wrap;
     padding-bottom: 20px;
 }
+
+  .skills{
+        margin: 16px
+    }
 
 progress[value] {
   -webkit-appearance: none;
@@ -294,6 +298,14 @@ progress[value]::-webkit-progress-value{
     text-align: center;  
     }
     
+    .conteudo-sobre{
+    padding: 64px 0px 32px;
+    margin-right: 16px;
+    }
+ 
+    .competencias{
+    justify-content: center;
+    }
 }
 
 
