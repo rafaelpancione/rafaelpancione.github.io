@@ -306,6 +306,15 @@ progress[value]::-webkit-progress-value{
     .competencias{
     justify-content: center;
     }
+    
+    .conteudo-portifolio{
+    padding: 64px 0px 32px;
+    margin-right: 16px;
+    }
+    
+    .img-projeto{
+    display: none;
+}
 }
 
 
