@@ -108,6 +108,10 @@ img{
     font-size: 32px;
 }
 
+    .openbtnhome{
+   display: none; 
+}
+
 /* -- Principal - HOME -- */
 
 .background{
@@ -248,17 +252,49 @@ progress[value]::-webkit-progress-value{
    width: 0;
    margin: 16px;
 }
-
     .openbtnhome a{
     color: #fff;
     font-size: 32px;
-}
-    
+}   
     .menu .closebtn{
   display: inline-block;
     }
 }
 
+@media only screen and (max-width: 767px){
+    .menu{
+    padding: 64px 0 32px 0;    
+    position: fixed;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+    .openbtn{
+   display:inline-block; 
+    }
+    
+    .openbtnhome{
+   display: inline-block;    
+   width: 0;
+   margin: 16px;
+}
+    .openbtnhome a{
+    color: #fff;
+    font-size: 32px;
+}   
+    .menu .closebtn{
+  display: inline-block;
+    }
+    
+    .conteudo-home h1{
+    text-align: center;  
+    }
+    
+}
 
 
 
