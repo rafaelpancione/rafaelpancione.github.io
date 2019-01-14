@@ -79,6 +79,9 @@ img{
     transition: 0.3s;
 }
 
+.menu a:hover{
+    color: #bdc3c7;
+}
 .redes-sociais{
     display: flex;
 }
