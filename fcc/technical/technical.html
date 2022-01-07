@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documantion Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <nav id="navbar">
+        <header>ArnoldC Documantion</header>
+        <ul>
+            <li>
+                <a href="#Introduction" class="nav-link">Introduction</a>
+            </li>
+            <li>
+                <a href="#Main_method" class="nav-link">Main method</a>
+            </li>
+            <li>
+                <a href="#Statements" class="nav-link">Statements</a>
+            </li>
+            <li>
+                <a href="#Condition_statements" class="nav-link">Condition statements</a>
+            </li>
+            <li>
+                <a href="#Methods" class="nav-link">Methods</a>
+            </li>
+            <li>
+                <a href="#Features" class="nav-link">Features</a>
+            </li>
+            <li>
+                <a href="#Printing_squares_from_1_to_10" class="nav-link">Printing squares from 1 to 10</a>
+            </li>
+            <li>
+                <a href="#Declaring_a_modulo_function_and_using_it_from_the_main_method" class="nav-link">Declaring a modulo function and using it from the main method</a>
+            </li>
+            <li>
+                <a href="#FizzBuzz_Implementation" class="nav-link">FizzBuzz Implementation</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <main id="main-doc">
+        <img src="img/arnold.jpeg" width="500px" alt="arnold">
+        <h1>ArnoldC</h1>
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>ArnoldC is an imperative programming language where the basic keywords are replaced with quotes from
+                different Schwarzenegger movies. Parsing is done with Parboiled and ASM is used to generate the Java
+                bytecode.</p>
+        </section>
+        <br>
+        <section class="main-section" id="Main_method">
+            <header>Main method</header>
+            <p>Every ArnoldC program must have a main method. The form is:</p>
+
+            <code class="code-bar">IT'S SHOWTIME <br>
+                [statements]<br>
+                YOU HAVE BEEN TERMINATED</code>
+
+            <p>The simplest possible ArnoldC program that does nothing</p>
+
+            <code class="code-bar">
+                IT'S SHOWTIME<br>
+                YOU HAVE BEEN TERMINATED
+            </code>
+        </section>
+        <br>
+        <section class="main-section" id="Statements">
+            <header>Statements</header>
+            <h3>Printing</h3>
+            <p>The statement <code>TALK TO THE HAND</code> is used to print strings or variables. Printing a string</p>
+            <code>TALK TO THE HAND "happy families are all alike"</code>
+            <p>Printing a variable</p>
+            <code class="code-bar">
+                TALK TO THE HAND myvar
+            </code>
+            <br>
+            <h3>Declaring variables</h3>
+            <p>The only variable type in ArnoldC is a 16bit signed integer. A value must be given to the variable when
+                it is declared.</p>
+            <code class="code-bar">
+                HEY CHRISTMAS TREE variablename<br>
+                YOU SET US UP initialvalue
+            </code>
+            <p>The "macros" <code>@I LIED</code>> and <code>@NO PROBLEMO</code> correspond to the values 0 and 1</p>
+            <p>Initialising two variables with the values of 0 and 1</p>
+            <code class="code-bar">
+                HEY CHRISTMAS TREE varFalse<br>
+                YOU SET US UP @I LIED<br>
+                HEY CHRISTMAS TREE varTrue<br>
+                YOU SET US UP @NO PROBLEMO
+                </code>
+            <br>
+            <h3>Assigning variables</h3>
+
+            <p>Variable assignment is done using the patte</p>
+            <code class="code-bar">
+                GET TO THE CHOPPER myvar<br>
+HERE IS MY INVITATION firstOperand<br>
+[operations]<br>
+ENOUGH TALK
+            </code>
+            <p>The <code>HERE IS MY INVITATION</code> sets a value on the top of the stack. The rest of the operations
+                always apply to the current value of the stack which is finally assigned to the <code>myvar</code>
+                variable.</p>
+
+            <h4>Arithmetic operations</h4>
+            <ul>
+            <li><p>Plus</p></li>
+            <code class="code-bar">
+                GET UP operand
+            </code>
+            <li><p>Minus</p></li>
+            <code class="code-bar">GET DOWN operand</code>
+            <li><p>Multiplication</p></li>
+            <code class="code-bar">YOU'RE FIRED operand</code>
+            <li><p>Division</p></li>
+            <code class="code-bar">HE HAD TO SPLIT operand</code>
+
+            </ul>
+            <p>All the arithmetic operations have the same precedence.</p>
+            <p><strong>Example</strong><code> a = (4 + b) * 2</code></p>
+            <code class="code-bar">GET TO THE CHOPPER a<br>
+                HERE IS MY INVITATION 4<br>
+                GET UP b<br>
+                YOU'RE FIRED 2<br>
+                ENOUGH TALK</code>
+
+            <h4>Logical operations</h4>
+            <p>True statements result the value of 1 and false statements the value of 0.</p>
+            <ul>
+           <li> <p>Equal to</p></li>
+            <code class="code-bar">YOU ARE NOT YOU YOU ARE ME operand</code>
+
+            <li><p>Greater than</p></li>
+            <code>LET OFF SOME STEAM BENNET operand</code>
+
+            <li><p>Or</p></li>
+            <code class="code-bar">CONSIDER THAT A DIVORCE operand</code>
+
+            <li><p>And</p></li>
+            <code class="code-bar">KNOCK KNOCK operand</code>
+        </ul>
+            <p><strong>Example </strong><code>a = (b + 5) > c</code></p>
+
+            <code class="code-bar">
+                GET TO THE CHOPPER a<br>
+                HERE IS MY INVITATION b<br>
+                GET UP 5<br>
+                LET OFF SOME STEAM BENNET c<br>
+                ENOUGH TALK
+             </code>
+
+            <p><strong>Example </strong><code>a = (b || c) && d</code></p>
+
+            <code class="code-bar">
+                GET TO THE CHOPPER a<br>
+                HERE IS MY INVITATION b<br>
+                CONSIDER THAT A DIVORCE c<br>
+                KNOCK KNOCK d<br>
+                ENOUGH TALK
+             </code>
+
+        </section>
+        <br>
+        <section class="main-section" id="Condition_statements">
+            <header>Condition statements</header>
+            <p>The condition branch is executed if the value is anything other than 0.</p>
+            <h3>If</h3>
+            <code class="code-bar">
+                if (value) [statements]<br><br>
+
+BECAUSE I'M GOING TO SAY PLEASE value<br>
+[statements]<br>
+YOU HAVE NO RESPECT FOR LOGIC
+            </code>
+            <h3>If Else</h3>
+            <code class="code-bar">
+                if (value) [statements] else [statements]<br><br>
+
+BECAUSE I'M GOING TO SAY PLEASE value<br>
+[statements]<br>
+BULLSHIT<br>
+[statements]<br>
+YOU HAVE NO RESPECT FOR LOGIC
+            </code>
+
+            <h4>Example</h4>
+            <code class="code-bar">
+                if(a) print "a is true"<br>
+else print "a is not true"<br>
+BECAUSE I'M GOING TO SAY PLEASE a<br>
+TALK TO THE HAND "a is true"<br>
+BULLSHIT<br>
+TALK TO THE HAND "a is not true"<br>
+YOU HAVE NO RESPECT FOR LOGIC
+            </code>
+
+            <p><strong>Example</strong> The value of the condition statement must be calculated beforehand <code>if(a > b) print "a is greater than b"</code></p>
+            <code class="code-bar">
+                GET TO THE CHOPPER result<br>
+HERE IS MY INVITATION a<br>
+LET OFF SOME STEAM BENNET b<br>
+ENOUGH TALK<br>
+BECAUSE I'M GOING TO SAY PLEASE result<br>
+TALK TO THE HAND "a is greater b"<br>
+YOU HAVE NO RESPECT FOR LOGIC
+            </code>
+
+            <h4>While</h4>
+            <code class="code-bar">
+                STICK AROUND value<br>
+[statements]<br>
+CHILL
+            </code>
+            <p><strong>Example</strong> A full program printing numbers 1-10</p>
+            <code class="code-bar">
+                IT'S SHOWTIME<br>
+HEY CHRISTMAS TREE isLessThan10<br>
+YOU SET US UP @NO PROBLEMO<br>
+HEY CHRISTMAS TREE n<br>
+YOU SET US UP 0<br>
+STICK AROUND isLessThan10<br>
+GET TO THE CHOPPER n<br>
+HERE IS MY INVITATION n<br>
+GET UP 1<br>
+ENOUGH TALK<br>
+TALK TO THE HAND n<br>
+GET TO THE CHOPPER isLessThan10<br>
+HERE IS MY INVITATION 10<br>
+LET OFF SOME STEAM BENNET n<br>
+ENOUGH TALK<br>
+CHILL<br>
+YOU HAVE BEEN TERMINATED 
+            </code>
+
+        </section>
+        <br>
+        <section class="main-section" id="Methods">
+            <header>Methods</header>
+            <p>Methods must be defined outside the main method. The method arguments are defined with <code>I NEED YOUR CLOTHES YOUR BOOTS AND YOUR MOTORCYCLE</code> arg. The one-liner must be added for each argument separately. <code>GIVE THESE PEOPLE AIR</code> at the end of the "method declaration" indicates the method is non-void. <code>I'LL BE BACK</code> is the keyword for RETURN and it can take an operand depending whether the method is void or not.</p>
+            
+            <p>A void method</p>
+            <code class="code-bar">
+                LISTEN TO ME VERY CAREFULLY methodName<br>
+[Statements]<br>
+HASTA LA VISTA, BABY
+
+                <p>A non-void method that takes two parameters</p>
+                <code class="code-bar">LISTEN TO ME VERY CAREFULLY methodName<br>
+                    I NEED YOUR CLOTHES YOUR BOOTS AND YOUR MOTORCYCLE arg1<br>
+                    I NEED YOUR CLOTHES YOUR BOOTS AND YOUR MOTORCYCLE arg2<br>
+                    GIVE THESE PEOPLE AIR<br>
+                    [Statements]<br>
+                    HASTA LA VISTA, BABY</code>
+            </code>
+        <br>
+        </section>
+<br>
+        <section class="main-section" id="Features">
+            <header>Features</header>
+            <p>More examples can be found from the [test package]</p>
+            <a href="http://github.com/lhartikk/ArnoldC/tree/master/src/test/scala/org/arnoldc">http://github.com/lhartikk/ArnoldC/tree/master/src/test/scala/org/arnoldc)</a> 
+        </section>
+  <br>
+        <section class="main-section" id="Printing_squares_from_1_to_10">
+            <header>Printing squares from 1 to 10</header><br>
+            <code class="code-bar">
+                IT'S SHOWTIME<br>
+HEY CHRISTMAS TREE limit<br>
+YOU SET US UP 10<br>
+HEY CHRISTMAS TREE index<br>
+YOU SET US UP 1<br>
+HEY CHRISTMAS TREE squared<br>
+YOU SET US UP 1<br>
+HEY CHRISTMAS TREE loop<br>
+YOU SET US UP @NO PROBLEMO<br>
+STICK AROUND loop<br>
+GET TO THE CHOPPER squared<br>
+HERE IS MY INVITATION index<br>
+YOU'RE FIRED index<br>
+ENOUGH TALK<br>
+TALK TO THE HAND squared<br>
+GET TO THE CHOPPER loop<br>
+HERE IS MY INVITATION limit<br>
+LET OFF SOME STEAM BENNET index<br>
+ENOUGH TALK<br>
+GET TO THE CHOPPER index<br>
+HERE IS MY INVITATION index<br>
+GET UP 1<br>
+ENOUGH TALK<br>
+CHILL<br>
+YOU HAVE BEEN TERMINATED 
+            </code>
+        </section>
+        <br>
+        <section class="main-section" id="Declaring_a_modulo_function_and_using_it_from_the_main_method">
+            <header>Declaring a modulo function and using it from the main method</header><br>
+            <code class="code-bar">
+                IT'S SHOWTIME<br>
+HEY CHRISTMAS TREE result1<br>
+YOU SET US UP 0<br>
+HEY CHRISTMAS TREE result2<br>
+YOU SET US UP 0<br>
+HEY CHRISTMAS TREE result3<br>
+YOU SET US UP 0<br>
+HEY CHRISTMAS TREE result4<br>
+YOU SET US UP 0<br>
+GET YOUR ASS TO MARS result1<br>
+DO IT NOW modulo 9 4<br>
+TALK TO THE HAND result1<br>
+GET YOUR ASS TO MARS result2<br>
+DO IT NOW modulo 4795 87<br>
+TALK TO THE HAND result2<br>
+GET YOUR ASS TO MARS result3<br>
+DO IT NOW modulo 3978 221<br>
+TALK TO THE HAND result3<br>
+GET YOUR ASS TO MARS result4<br>
+DO IT NOW modulo 5559 345<br>
+TALK TO THE HAND result4<br>
+YOU HAVE BEEN TERMINATED<br><br>
+
+LISTEN TO ME VERY CAREFULLY modulo<br>
+I NEED YOUR CLOTHES YOUR BOOTS AND YOUR MOTORCYCLE dividend<br>
+I NEED YOUR CLOTHES YOUR BOOTS AND YOUR MOTORCYCLE divisor<br>
+GIVE THESE PEOPLE AIR<br>
+HEY CHRISTMAS TREE quotient<br>
+YOU SET US UP 0<br>
+HEY CHRISTMAS TREE remainder<br>
+YOU SET US UP 0<br>
+HEY CHRISTMAS TREE product<br>
+YOU SET US UP 0<br>
+GET TO THE CHOPPER quotient<br>
+HERE IS MY INVITATION dividend<br>
+HE HAD TO SPLIT divisor<br>
+ENOUGH TALK<br>
+GET TO THE CHOPPER product<br>
+HERE IS MY INVITATION divisor<br>
+YOU'RE FIRED quotient<br>
+ENOUGH TALK<br>
+GET TO THE CHOPPER remainder<br>
+HERE IS MY INVITATION dividend<br>
+GET DOWN product<br>
+ENOUGH TALK<br>
+I'LL BE BACK remainder<br>
+HASTA LA VISTA, BABY
+            </code>
+        </section>
+        <br>
+
+        <section class="main-section" id="FizzBuzz_Implementation">
+            <header>FizzBuzz Implementation</header><br>
+          <a href="https://gist.github.com/georg/9224355">https://gist.github.com/georg/9224355</a>
+            </section>
+
+    </main>
+</body>
+
+</html>

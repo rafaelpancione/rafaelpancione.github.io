@@ -1,0 +1,139 @@
+/* -- Reset básico -- */
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body, h1, h2, p, ul, li, a {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/** Menu **/
+
+#navbar{
+    background-color: #FC997C;
+    width: 100%;
+    position: fixed;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-list li{
+    padding: 20px 0px 20px 20px;
+}
+
+.nav-list a{
+    color: #2E4C6D;
+    font-size: large;
+    font-weight: bold;
+}
+
+/** Welcome **/
+
+.welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #2E4C6D;
+    color: #fff;
+}
+
+.welcome-section h2{
+    color: #FC997C;
+}
+
+.projects{
+    text-align: center;
+}
+
+.card{
+    text-align: center;
+    width: 460px;
+    background-color: #396EB0;
+    border: 2px solid #396EB0;
+    margin: 10px;
+}
+
+.cards-project{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card p{
+    color: #fff;
+    font-size: large;
+    padding: 10px;
+}
+
+.contact{
+    background-color: #DADDFC;
+    text-align: center;
+    height: 160px;
+}
+
+.contact h1{
+    padding: 20px 0 0 0;
+}
+
+.contact p{
+  padding: 0 0 20px 0px;
+}
+
+footer{
+    background-color: #396EB0;
+    color: #fff;
+    text-align: center;padding: 10px;
+}
+
+.r-icon{
+    color: #2E4C6D;
+}
+
+.r-icon p{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 976px){
+  .cards-project{
+      flex-direction: column;
+
+    align-items: center;
+  }
+}

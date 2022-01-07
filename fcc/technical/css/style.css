@@ -1,0 +1,76 @@
+header{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+body{
+    margin: 0 auto;
+    background-color: #CFD3CE;
+    font-family: monospace;
+    display: grid;
+    grid-template-areas: 'menu main main main main' ;
+}
+
+#navbar{
+    padding-top: 20px;
+    grid-area: menu;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#navbar li{
+    list-style: none;
+    border: outset;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#navbar a{
+    text-decoration: none;
+}
+
+
+
+#main-doc{
+    grid-area: main;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+code{
+    background-color: #C6B497;
+}
+
+.code-bar{
+    background-color: #C6B497;
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    padding: 15px;
+    margin: 10px;
+}
+
+#FizzBuzz_Implementation{
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 815px){
+    body{
+        grid-template-areas: 
+        'menu menu menu menu menu'
+        'main main main main main'
+        ;
+    }
+
+    #navbar{
+        width: 90%;
+    }
+
+    img{
+        width: 95%;
+    }
+}

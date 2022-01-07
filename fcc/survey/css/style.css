@@ -1,0 +1,33 @@
+body{
+    background-image: url(https://nypost.com/wp-content/uploads/sites/2/2021/12/zombie-apocalypse-1.jpg?quality=90&strip=all&w=1488);
+}
+
+header{
+   text-align: center;
+}
+
+
+
+form{
+    margin: 0 auto;
+    background-color: rgba(255,255,255, 0.7);
+    width: 500px; 
+    padding: 20px;
+    border-radius: 10px;  
+}
+
+.top-form{
+    text-align: left;
+}
+
+.top-form input, select{
+    width: 100%;
+}
+
+.botton-form{
+    text-align: center;
+}
+textarea{
+    width: 400px;
+    height: 100px;
+}

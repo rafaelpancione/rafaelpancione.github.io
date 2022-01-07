@@ -1,0 +1,33 @@
+body{
+    background-color: #FFE6BC;
+    font-family: monospace;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+figure{
+    display: grid;
+    justify-content: center;
+}
+
+figcaption{
+    text-align: right;
+}
+
+#tribute-info{
+    background-color: #FFFFFF ;
+    padding: 20px;
+    font-size: 16px;
+}
+
+footer{
+    text-align: center;
+    font-size: 16px;
+}
